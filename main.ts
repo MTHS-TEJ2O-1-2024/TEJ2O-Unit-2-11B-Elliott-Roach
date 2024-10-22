@@ -24,7 +24,15 @@ input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Happy)
 })
 
+input.onGesture(Gesture.Shake, function () {
+
 if (randomeNumberOne < randomeNumberTwo) {
-    basic.showString('randomeNumberOne < randomeNumberTwo')
-    basic.showIcon(IconNames.Happy)
+    basic.showNumber(randomeNumberOne)
+    basic.showString('<')
+    basic.showNumber(randomeNumberTwo)
+} else {
+    basic.showNumber(randomeNumberOne)
+    basic.showString('>')
+    basic.showNumber(randomeNumberTwo)
 }
+})
