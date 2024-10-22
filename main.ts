@@ -2,7 +2,22 @@
  *
  * Created by: Elliott
  * Created on: oct 2024
- * This program says hello World
+ * This program genrats two random numbers and compaers them
 */
+ 
+let randomeNumberOne: number =0
+let randomeNumberTwo: number =0
 
-basic.showString('Hello, World!')
+basic.clearScreen()
+randomeNumberOne = randint(0, 99)
+randomeNumberTwo = randint(0, 99)
+pause(1000)
+basic.showIcon(IconNames.Happy)
+
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(randomeNumberOne)
+})
+
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(randomeNumberTwo)
+})
