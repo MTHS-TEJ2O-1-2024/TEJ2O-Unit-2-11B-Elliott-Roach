@@ -16,8 +16,15 @@ basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(randomeNumberOne)
+    basic.showIcon(IconNames.Happy)
 })
 
 input.onButtonPressed(Button.B, function () {
     basic.showNumber(randomeNumberTwo)
+    basic.showIcon(IconNames.Happy)
 })
+
+if (randomeNumberOne < randomeNumberTwo) {
+    basic.showString('randomeNumberOne < randomeNumberTwo')
+    basic.showIcon(IconNames.Happy)
+}
