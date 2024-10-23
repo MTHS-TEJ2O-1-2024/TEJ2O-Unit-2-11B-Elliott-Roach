@@ -32,15 +32,15 @@ input.onButtonPressed(Button.B, function () {
 //compares number one and two
 input.onGesture(Gesture.Shake, function () {
 
-if (randomeNumberOne < randomeNumberTwo) {
-    basic.showNumber(randomeNumberOne)
-    basic.showString('<')
-    basic.showNumber(randomeNumberTwo)
-    basic.showIcon(IconNames.Sad)
-} else {
-    basic.showNumber(randomeNumberOne)
-    basic.showString('>')
-    basic.showNumber(randomeNumberTwo)
-    basic.showIcon(IconNames.Sad)
-}
+    if (randomeNumberOne < randomeNumberTwo) {
+        basic.showNumber(randomeNumberOne)
+        basic.showString('<')
+        basic.showNumber(randomeNumberTwo)
+        basic.showIcon(IconNames.Sad)
+    } else {
+        basic.showNumber(randomeNumberOne)
+        basic.showString('>')
+        basic.showNumber(randomeNumberTwo)
+        basic.showIcon(IconNames.Sad)
+    }
 })
